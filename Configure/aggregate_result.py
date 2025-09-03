@@ -128,9 +128,9 @@ def main(argv: List[str] | None = None) -> int:
 	args = parser.parse_args(argv)
 
 	specs = [
-		ModelSpec(name="XGBoost", folder="XGBoost", pattern="metrics_seen"),
-		ModelSpec(name="CatBoost", folder="CatBoost", pattern="metrics_seen"),
-		ModelSpec(name="RandomForest", folder="Random_Forest", pattern="metrics_seen"),
+		ModelSpec(name="XGBoost", folder="ML_XGBoost", pattern="metrics_seen"),
+		ModelSpec(name="CatBoost", folder="ML_CatBoost", pattern="metrics_seen"),
+		ModelSpec(name="RandomForest", folder="ML_Random_Forest", pattern="metrics_seen"),
 	]
 
 	df = aggregate(specs, args.round)
